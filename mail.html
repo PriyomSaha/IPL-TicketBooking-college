@@ -1,0 +1,55 @@
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      div{
+        width:500px;
+        height:350px;
+        display:block;
+        position:absolute;
+  }
+
+  div::after {
+  content: "";
+  background: url(logo.png);
+
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  }
+  #details
+  {
+    padding:10%;
+    color:blue;
+     font-family: "Times New Roman", Times, serif;
+     font-size: 150%;
+     opacity:1;
+	 background:transparent;
+	 text-align:right;
+  }
+  h1{
+  text-align:center;
+  }
+     </style>
+  </head>
+
+  <body>
+    <div>
+    <div class="container">
+	<span id="details">Indian Premier Ligue</span><br>
+      <h1>Name : ##name##<br>
+      Match Between : ##teams##<br>
+      Date : ##date##<br>
+      Venue : ##place##<br>
+      Seat : ##seats##<br></h1>
+    </div>
+    </div>
+  </body>
+
+  </html>
